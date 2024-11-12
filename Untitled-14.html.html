@@ -1,0 +1,101 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Participación en Actividades del Aniversario</title>
+    <style type="text/css">
+        body {
+            background-image: url(../examen%20de%20html/98581769-6601-4086-9f9b-beb8dab87c5c.jpg);
+            background-size: cover; /* Esto hace que la imagen cubra toda la página */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            margin: 0; /* Elimina los márgenes por defecto */
+            height: 100vh; /* Hace que el fondo cubra toda la altura de la ventana */
+        }
+
+        h2 {
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para el formulario */
+            padding: 20px;
+            border-radius: 10px;
+            width: 50%;
+            margin: 0 auto; /* Centra el formulario */
+        }
+
+        label {
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Formulario de Participación en las Actividades del Aniversario del Instituto</h2>
+
+    <form action="/enviar" method="post">
+
+        <label for="nombre">Nombre Completo:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="edad">Edad:</label><br>
+        <input type="number" id="edad" name="edad" required><br><br>
+
+        <label for="actividad">Actividad en la que desea participar:</label><br>
+        <select id="actividad" name="actividad" required>
+            <option value="competencia_deportiva">Competencia Deportiva</option>
+            <option value="exhibicion_artistica">Exhibición Artística</option>
+            <option value="evento_cultural">Evento Cultural</option>
+            <option value="concurso_de_talento">Concurso de Talento</option>
+            <option value="charlas_y_conferencias">Charlas y Conferencias</option>
+        </select><br><br>
+
+        <label for="dias_participacion">Días de participación (marque los días en los que podrá asistir):</label><br>
+        <input type="checkbox" id="lunes" name="dias_participacion" value="lunes">
+        <label for="lunes">Lunes</label><br>
+        <input type="checkbox" id="martes" name="dias_participacion" value="martes">
+        <label for="martes">Martes</label><br>
+        <input type="checkbox" id="miercoles" name="dias_participacion" value="miercoles">
+        <label for="miercoles">Miércoles</label><br>
+        <input type="checkbox" id="jueves" name="dias_participacion" value="jueves">
+        <label for="jueves">Jueves</label><br>
+        <input type="checkbox" id="viernes" name="dias_participacion" value="viernes">
+        <label for="viernes">Viernes</label><br><br>
+
+        <label for="comentarios">Comentarios o sugerencias adicionales:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+</body>
+</html>
